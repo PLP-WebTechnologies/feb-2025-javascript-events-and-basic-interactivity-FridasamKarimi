@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Interactive JavaScript Playground 🎉</h1>
+
+        <!-- Event Handling Section -->
+        <section>
+            <h2>Event Handling</h2>
+            <button id="clickBtn">Click Me!</button>
+            <button id="hoverBtn">Hover Over Me!</button>
+            <input type="text" id="keyInput" placeholder="Type something...">
+            <button id="secretBtn">Double-Click for a Surprise!</button>
+            <p id="eventOutput">Event output will appear here.</p>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section>
+            <h2>Interactive Elements</h2>
+            <!-- Color-Changing Button -->
+            <button id="colorBtn">Change My Color!</button>
+
+            <!-- Image Gallery -->
+            <div class="gallery">
+                <img id="galleryImage" src="images/pic1.jpg" alt="Gallery Image" style="transition: opacity 0.3s;">
+                <div class="gallery-controls">
+                    <button id="prevBtn">Previous</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+                </div>
+                <div id="tab1" class="tab-content active">Welcome to Tab 1! This is some cool content.</div>
+                <div id="tab2" class="tab-content">Tab 2 has even cooler stuff!</div>
+                <div id="tab3" class="tab-content">Tab 3 is the coolest of all!</div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section>
+            <h2>Form Validation</h2>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars):</label>
+                    <input type="password" id="password" required>
+                    <span class="error" id="passwordError"></span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
